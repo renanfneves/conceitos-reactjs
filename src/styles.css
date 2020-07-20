@@ -8,32 +8,41 @@ body {
   font-size: 14px;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
-}
-
-div li {
-  display: flex;
-  align-items: center;
-}
-
-div li + li {
-  margin-top: 15px;
-}
-
 button {
-  background: #7159c1;
   color: #fff;
   border: 0;
-  padding: 10px 15px;
-  cursor: pointer;
-  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 14px;
+  cursor: pointer;
 }
 
-div li button {
+.add-button {
+  background: #7159c1;
+}
+
+.delete-button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+.container {
+  width: 50%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-item {
+  list-style-type: none;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.repo-title {
+  font-size: 18px;
+  font-weight: 600;
 }
